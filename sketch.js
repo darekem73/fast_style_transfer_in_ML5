@@ -51,6 +51,7 @@ function setup() {
 // A function to be called when the model has been loaded
 function modelLoaded() {
   modelNum++;
+  console.log('Models loaded ' + modelNum);
   if (modelNum >= modelNames.length) {
     modelReady = true;
     predictImg(currentModel);
